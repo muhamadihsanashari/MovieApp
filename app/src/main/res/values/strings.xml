@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Movie Ticket</string>
+    <string name="skip">Lewati</string>
+    <string name="next">Selanjutnya</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="no_playing_desc">Lebih mudah untuk mengetahui\nfilm yang sedang tampil</string>
+    <string name="pre_sale">Pre Sale</string>
+    <string name="pre_sale_desc">Tidak khawatir ketinggalan\nupdate film terbaru</string>
+    <string name="cashless">Cashless</string>
+    <string name="cash_less_desc">Gunakan e-wallet untuk transaksi\ntiket nonton</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="username_hint">username</string>
+    <string name="password_hint">password</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="nama">Nama</string>
+    <string name="nama_hint">nama</string>
+    <string name="alamat_email">Alamat Email</string>
+    <string name="alamat_email_hint">alamat email</string>
+    <string name="photo">Photo</string>
+    <string name="welcome_text">Welcome,\nIhsan Ashari</string>
+    <string name="upload_nanti">Upload Nanti</string>
+    <string name="simpan_dan_lanjutkan">Simpan dan Lanjutkan</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="avengers_infinity_war">Avengers: Infinity War</string>
+    <string name="storyboard">Storyboard</string>
+    <string name="genre">Action, Sci-fi, Kids</string>
+    <string name="storyboard_desc">The Avengers must stop Thanos, a mad Titan, and his army from getting their hands on all the infinity stones. However, the mad Titan is prepared to go to any lengths to carry out his insane plan.</string>
+    <string name="player">Who’s Played</string>
+    <string name="pilih_bangku">Pilih Bangku</string>
+    <string name="judul_film">Alita Battle</string>
+    <string name="layar_bioskop">LAYAR BIOSKOP</string>
+    <string name="beli_tiket">Beli Tiket</string>
+    <string name="empty">Empty</string>
+    <string name="selected">Selected</string>
+    <string name="booked">Booked</string>
+    <string name="checkout">Checkout</string>
+    <string name="bayar_sekarang">Bayar Sekarang</string>
+    <string name="batalkan">Batalkan</string>
+    <string name="cinema">Cinema</string>
+    <string name="date_time">12 Aug, 10 AM</string>
+    <string name="seat_order_1">Seat No. C1</string>
+    <string name="seat_order_2">Seat No. C2</string>
+    <string name="price">IDR 70.000</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="simpan_profile">Simpan profile</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="history">History</string>
+    <string name="masuk_akun">Masuk akun</string>
+    <string name="daftar_baru">Daftar baru</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="when">When</string>
+</resources>
