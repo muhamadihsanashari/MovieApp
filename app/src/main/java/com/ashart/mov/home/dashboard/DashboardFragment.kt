@@ -18,7 +18,6 @@ import com.ashart.mov.utils.Preferences
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.activity_sign_up_photoscreen.*
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 import java.text.NumberFormat
 import java.util.*
