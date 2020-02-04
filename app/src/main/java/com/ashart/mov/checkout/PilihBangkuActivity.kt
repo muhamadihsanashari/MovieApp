@@ -1,8 +1,10 @@
 package com.ashart.mov.checkout
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.ashart.mov.CheckoutActivity
 import com.ashart.mov.R
 import com.ashart.mov.home.model.Film
 import com.bagicode.bwamov.checkout.model.Checkout
@@ -34,11 +36,44 @@ class PilihBangkuActivity : AppCompatActivity() {
                 a3.setImageResource(R.drawable.ic_rectangle_selected)
                 statusA3 = true
                 total += 1
-                belitket(total)
+                belitiket(total)
 
                 val data = Checkout("A3", "70000")
                 dataList.add(data)
             }
+        }
+
+        a4.setOnClickListener {
+            if (statusA4) {
+                a4.setImageResource(R.drawable.ic_rectangle_empty)
+                statusA4 = false
+                total -= 1
+                belitiket(total)
+            } else {
+                a4.setImageResource(R.drawable.ic_rectangle_selected)
+                statusA4 = true
+                total += 1
+                belitiket(total)
+
+                val data = Checkout("A4", "70000")
+                dataList.add(data)
+            }
+        }
+
+        btn_home.setOnClickListener {
+            val intent = Intent(this, CheckoutActivity::class.java)
+                    .putExtra("data", dataList)
+            startActivity(intent)
+        }
+    }
+
+    private fun belitiket(total: Int) {
+        if (total == 0) {
+            btn_home.setText("Beli Tiket")
+            btn_home.visibility = View.INVISIBLE
+        } else {
+            btn_home.setText("Beli Tiket ("+total+")")
+            btn_home.visibility = View.INVISIBLE
         }
     }
 }
