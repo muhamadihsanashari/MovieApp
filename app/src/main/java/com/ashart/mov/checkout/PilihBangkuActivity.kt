@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.ashart.mov.CheckoutActivity
 import com.ashart.mov.R
 import com.ashart.mov.home.model.Film
 import com.bagicode.bwamov.checkout.model.Checkout
