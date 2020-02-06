@@ -27,12 +27,12 @@ class PilihBangkuActivity : AppCompatActivity() {
 
         a3.setOnClickListener {
             if (statusA3) {
-                a3.setImageResource(R.drawable.ic_rectangle_empty)
+                a3.setImageResource(R.drawable.empty_shape)
                 statusA3 = false
                 total -= 1
                 belitiket(total)
             } else {
-                a3.setImageResource(R.drawable.ic_rectangle_selected)
+                a3.setImageResource(R.drawable.selected_shape)
                 statusA3 = true
                 total += 1
                 belitiket(total)
@@ -44,12 +44,12 @@ class PilihBangkuActivity : AppCompatActivity() {
 
         a4.setOnClickListener {
             if (statusA4) {
-                a4.setImageResource(R.drawable.ic_rectangle_empty)
+                a4.setImageResource(R.drawable.empty_shape)
                 statusA4 = false
                 total -= 1
                 belitiket(total)
             } else {
-                a4.setImageResource(R.drawable.ic_rectangle_selected)
+                a4.setImageResource(R.drawable.selected_shape)
                 statusA4 = true
                 total += 1
                 belitiket(total)

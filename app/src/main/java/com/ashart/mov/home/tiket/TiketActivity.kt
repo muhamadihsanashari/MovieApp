@@ -1,4 +1,4 @@
-package com.ashart.mov.home
+package com.ashart.mov.home.tiket
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -5,10 +5,12 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -24,7 +26,7 @@
         <activity android:name=".checkout.CheckoutSuccessActivity"></activity>
         <activity android:name=".checkout.PilihBangkuActivity" />
         <activity android:name=".checkout.CheckoutActivity" />
-        <activity android:name=".home.TiketActivity" />
+        <activity android:name=".home.tiket.TiketActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".home.HomeActivity" />
         <activity android:name=".onboarding.OnBoardingOneActivity" />

@@ -38,14 +38,15 @@ class NowPlayingAdapter(private var data: List<Film>,
 
         private val tvImage : ImageView = view.findViewById(R.id.iv_poster_image)
 
-        fun bindItem(data:Film, listener: (Film) -> Unit, context: Context, position: Int) {
+        fun bindItem(data: Film, listener: (Film) -> Unit, context : Context, position : Int) {
+
             tvTitle.text = data.judul
             tvGenre.text = data.genre
             tvRate.text = data.rating
 
             Glide.with(context)
-                .load(data.poster)
-                .into(tvImage)
+                    .load(data.poster)
+                    .into(tvImage)
 
             itemView.setOnClickListener {
                 listener(data)

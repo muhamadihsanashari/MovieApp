@@ -101,14 +101,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView17">
 
         <ImageView
-            android:src="@drawable/ic_rectangle_booked"
+            android:src="@drawable/booked_shape"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_marginRight="10dp"
             android:layout_height="match_parent"/>
 
         <ImageView
-            android:src="@drawable/ic_rectangle_booked"
+            android:src="@drawable/booked_shape"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent"/>
@@ -129,14 +129,14 @@
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_empty" />
+            android:src="@drawable/empty_shape" />
 
         <ImageView
             android:id="@+id/a4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_empty" />
+            android:src="@drawable/empty_shape" />
 
     </LinearLayout>
 
@@ -158,13 +158,13 @@
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_booked" />
+            android:src="@drawable/booked_shape" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_booked" />
+            android:src="@drawable/booked_shape" />
 
         <TextView
             android:layout_width="0dp"
@@ -181,13 +181,13 @@
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_booked" />
+            android:src="@drawable/booked_shape" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_booked" />
+            android:src="@drawable/booked_shape" />
 
     </LinearLayout>
 
@@ -209,13 +209,13 @@
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_booked" />
+            android:src="@drawable/booked_shape" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_booked" />
+            android:src="@drawable/booked_shape" />
 
         <TextView
             android:layout_width="0dp"
@@ -232,13 +232,13 @@
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_booked" />
+            android:src="@drawable/booked_shape" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_booked" />
+            android:src="@drawable/booked_shape" />
 
     </LinearLayout>
 
@@ -260,13 +260,13 @@
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_booked" />
+            android:src="@drawable/booked_shape" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_booked" />
+            android:src="@drawable/booked_shape" />
 
         <TextView
             android:layout_width="0dp"
@@ -283,13 +283,13 @@
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_booked" />
+            android:src="@drawable/booked_shape" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/ic_rectangle_booked" />
+            android:src="@drawable/booked_shape" />
 
     </LinearLayout>
 
@@ -299,7 +299,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="24dp"
-        android:drawableLeft="@drawable/ic_rectangle_booked"
+        android:drawableLeft="@drawable/booked_shape"
         android:drawablePadding="10dp"
         android:fontFamily="@font/cera_medium"
         android:gravity="center"
@@ -315,7 +315,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="24dp"
-        android:drawableLeft="@drawable/ic_rectangle_empty"
+        android:drawableLeft="@drawable/empty_shape"
         android:drawablePadding="10dp"
         android:fontFamily="@font/cera_medium"
         android:gravity="center"
@@ -331,7 +331,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="24dp"
-        android:drawableLeft="@drawable/ic_rectangle_selected"
+        android:drawableLeft="@drawable/selected_shape"
         android:drawablePadding="10dp"
         android:fontFamily="@font/cera_medium"
         android:gravity="center"

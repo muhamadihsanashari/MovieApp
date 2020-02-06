@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/shape_background_color"
-    tools:context=".home.TiketFragment">
+    tools:context=".home.tiket.TiketFragment">
 
     <TextView
         android:id="@+id/textView"
@@ -15,7 +15,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/cera_bold"
         android:gravity="center"
-        android:text="Todays"
+        android:text="@string/todays"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/cera_medium"
-        android:text="200 Movie"
+        android:text="@string/movie_count"
         android:textColor="@android:color/darker_gray"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
