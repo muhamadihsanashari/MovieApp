@@ -56,14 +56,14 @@ class SignUpPhotoScreenActivity : AppCompatActivity(), PermissionListener {
                 iv_add.setImageResource(R.drawable.ic_btn_upload)
                 iv_profile.setImageResource(R.drawable.user_pic)
             }else{
-//                Dexter.withActivity(this)
-//                    .withPermission(android.Manifest.permission.CAMERA)
-//                    .withListener(this)
-//                    .check()
+                Dexter.withActivity(this)
+                    .withPermission(android.Manifest.permission.CAMERA)
+                    .withListener(this)
+                    .check()
 
-                ImagePicker.with(this)
-                        .cameraOnly()
-                        .start()
+//                ImagePicker.with(this)
+//                        .cameraOnly()
+//                        .start()
             }
         }
 
@@ -132,42 +132,42 @@ class SignUpPhotoScreenActivity : AppCompatActivity(), PermissionListener {
         Toast.makeText(this, "Tergesa?, Klik tombol upload nanti saja", Toast.LENGTH_SHORT).show()
     }
 
-//    @SuppressLint("MissingSuperCall")
-//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-//        if (requestCode == REQUEST_IMAGE_CAPTURE && requestCode == RESULT_OK) {
-//            var bitmap = data?.extras?.get("data")as Bitmap
-//            statusAdd = true
-//
-//            filePath = data.getData()!!
-//            Glide.with(this)
-//                .load(bitmap)
-//                .apply(RequestOptions.circleCropTransform())
-//                .into(iv_profile)
-//
-//            btn_save.visibility = View.VISIBLE
-//            iv_add.setImageResource(R.drawable.ic_btn_delete)
-//        }
-//    }
-
+    @SuppressLint("MissingSuperCall")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == Activity.RESULT_OK) {
+        if (requestCode == REQUEST_IMAGE_CAPTURE && requestCode == RESULT_OK) {
+            var bitmap = data?.extras?.get("data")as Bitmap
             statusAdd = true
-            filePath = data?.data!!
 
+            filePath = data.getData()!!
             Glide.with(this)
-                    .load(filePath)
-                    .apply(RequestOptions.circleCropTransform())
-                    .into(iv_profile)
-
-            Log.v("tamvan", "file url upload"+filePath)
+                .load(bitmap)
+                .apply(RequestOptions.circleCropTransform())
+                .into(iv_profile)
 
             btn_save.visibility = View.VISIBLE
             iv_add.setImageResource(R.drawable.ic_btn_delete)
-        }else if (resultCode == ImagePicker.RESULT_ERROR) {
-            Toast.makeText(this, ImagePicker.getError(data), Toast.LENGTH_SHORT).show()
-        }else{
-            Toast.makeText(this, "Task Cancelled", Toast.LENGTH_SHORT).show()
         }
     }
+
+//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+//        super.onActivityResult(requestCode, resultCode, data)
+//        if (resultCode == Activity.RESULT_OK) {
+//            statusAdd = true
+//            filePath = data?.data!!
+//
+//            Glide.with(this)
+//                    .load(filePath)
+//                    .apply(RequestOptions.circleCropTransform())
+//                    .into(iv_profile)
+//
+//            Log.v("tamvan", "file url upload"+filePath)
+//
+//            btn_save.visibility = View.VISIBLE
+//            iv_add.setImageResource(R.drawable.ic_btn_delete)
+//        }else if (resultCode == ImagePicker.RESULT_ERROR) {
+//            Toast.makeText(this, ImagePicker.getError(data), Toast.LENGTH_SHORT).show()
+//        }else{
+//            Toast.makeText(this, "Task Cancelled", Toast.LENGTH_SHORT).show()
+//        }
+//    }
 }
