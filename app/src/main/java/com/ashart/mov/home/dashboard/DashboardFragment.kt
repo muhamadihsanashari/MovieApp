@@ -59,6 +59,7 @@ class DashboardFragment : Fragment() {
 
         rv_now_playing.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         rv_coming_soon.layoutManager = LinearLayoutManager(context!!.applicationContext)
+
         getData()
     }
 

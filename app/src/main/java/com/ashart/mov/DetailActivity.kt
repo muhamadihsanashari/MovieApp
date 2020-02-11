@@ -46,6 +46,7 @@ class DetailActivity : AppCompatActivity() {
         }
 
         rv_who_play.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+
         getData()
     }
 
