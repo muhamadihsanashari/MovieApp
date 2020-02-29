@@ -17,7 +17,6 @@ class OnBoardingOneActivity : AppCompatActivity() {
         setContentView(R.layout.activity_on_boarding_one)
 
         preferences = Preferences(this)
-
         if (preferences.getValues("onboarding").equals("1")) {
             finishAffinity()
 

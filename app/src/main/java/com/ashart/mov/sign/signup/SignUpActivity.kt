@@ -86,7 +86,7 @@ class SignUpActivity : AppCompatActivity() {
                         SignUpPhotoScreenActivity::class.java).putExtra("nama", data.nama);
                     startActivity(intent)
                 }else{
-                    Toast.makeText(this@SignUpActivity, "User sudah digunakan!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@SignUpActivity, "Username sudah digunakan!", Toast.LENGTH_SHORT).show()
                 }
             }
 
