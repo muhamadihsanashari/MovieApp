@@ -34,9 +34,7 @@ class DashboardFragment : Fragment() {
     private var dataList = ArrayList<Film>()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_dashboard, container, false)
     }
@@ -59,7 +57,6 @@ class DashboardFragment : Fragment() {
 
         rv_now_playing.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         rv_coming_soon.layoutManager = LinearLayoutManager(context!!.applicationContext)
-
         getData()
     }
 

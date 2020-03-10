@@ -35,7 +35,6 @@ class NowPlayingAdapter(private var data: List<Film>,
         private val tvTitle : TextView = view.findViewById(R.id.tv_kursi)
         private val tvGenre : TextView = view.findViewById(R.id.tv_genre)
         private val tvRate : TextView = view.findViewById(R.id.tv_rate)
-
         private val tvImage : ImageView = view.findViewById(R.id.iv_poster_image)
 
         fun bindItem(data: Film, listener: (Film) -> Unit, context : Context, position: Int) {
