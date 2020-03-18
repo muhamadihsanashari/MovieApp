@@ -10,68 +10,35 @@ import com.ashart.mov.R
 import com.ashart.mov.home.model.Film
 import com.bumptech.glide.Glide
 
-class ComingSoonAdapter(private val listFilm: List<Film>) : RecyclerView.Adapter<NowPlayingAdapter.LeagueViewHolder>() {
+class ComingSoonAdapter(private val listFilm: List<Film>) : RecyclerView.Adapter<ComingSoonAdapter.LeagueViewHolder>() {
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): LeagueViewHolder {
-        val view : View = LayoutInflater.from(parent.context).inflate(R.layout.row_item_coming_soon, parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LeagueViewHolder {
+        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.row_item_coming_soon, parent, false)
         return LeagueViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
-        return listFilm.size
-    }
-
     override fun onBindViewHolder(holder: LeagueViewHolder, position: Int) {
-        val (desc, genre, judul, poster, rating) = data[position]
         val film = listFilm[position]
 
         Glide.with(holder.itemView.context)
             .load(film.poster)
             .into(holder.tvImage)
 
-        holder.tvTitle.text = judul
-        holder.tvGenre.text = genre
-        holder.tvRate.text = rating
-        holder.tvDesc.text= desc
+        holder.tvTitle.text = film.judul
+        holder.tvGenre.text = film.genre
+        holder.tvRate.text = film.rating
+        holder.tvDesc.text= film.desc
+    }
+
+    override fun getItemCount(): Int {
+        return listFilm.size
     }
 
     inner class LeagueViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
-        val tvTitle: TextView = view.findViewById(R.id.tv_kursi)
-        val tvGenre: TextView = view.findViewById(R.id.tv_genre)
-        val tvRate: TextView = view.findViewById(R.id.tv_rate)
-        val tvImage: ImageView = view.findViewById(R.id.iv_poster_image)
-        val tvDesc: TextView = view.findViewById(R.id.tv_desc)
+        var tvTitle: TextView = itemView.findViewById(R.id.tv_kursi)
+        var tvGenre: TextView = itemView.findViewById(R.id.tv_genre)
+        var tvRate: TextView = itemView.findViewById(R.id.tv_rate)
+        var tvImage: ImageView = itemView.findViewById(R.id.iv_poster_image)
+        var tvDesc: TextView = itemView.findViewById(R.id.tv_desc)
     }
-//    override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): LeagueViewHolder {
-//        val view: View = LayoutInflater.from(viewGroup.context).inflate(R.layout.row_item_coming_soon, viewGroup, false)
-//        return LeagueViewHolder(view)
-//    }
-//
-//    override fun getItemCount(): Int {
-//        return data.size
-//    }
-//
-//    override fun onBindViewHolder(holder: LeagueViewHolder, position: Int) {
-//        val (desc, genre, judul, poster, rating) = data[position]
-//
-//        Glide.with(holder.itemView.context)
-//            .load(poster)
-//            .into(holder.tvImage)
-//
-//        holder.tvTitle.text = judul
-//        holder.tvGenre.text = genre
-//        holder.tvRate.text = rating
-//        holder.tvDesc.text= desc
-//    }
-//
-//    inner class LeagueViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-//        val tvTitle: TextView = view.findViewById(R.id.tv_kursi)
-//        val tvGenre: TextView = view.findViewById(R.id.tv_genre)
-//        val tvRate: TextView = view.findViewById(R.id.tv_rate)
-//        val tvImage: ImageView = view.findViewById(R.id.iv_poster_image)
-//        val tvDesc: TextView = view.findViewById(R.id.tv_desc)
-//    }
 }
